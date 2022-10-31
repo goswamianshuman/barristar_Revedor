@@ -1,0 +1,33 @@
+{
+    "name": "barrisar",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next -p 5000",
+        "build": "next build",
+        "start": "next start -p 3000"
+    },
+    "dependencies": {
+        "@material-ui/core": "^4.11.0",
+        "@material-ui/icons": "^4.9.1",
+        "@zeit/next-css": "^1.0.1",
+        "@zeit/next-sass": "^1.0.1",
+        "font-awesome": "^4.7.0",
+        "joi-browser": "^13.4.0",
+        "js-cookie": "^2.2.1",
+        "next": "10.0.2",
+        "node-sass": "^5.0.0",
+        "react": "17.0.1",
+        "react-dom": "17.0.1",
+        "react-modal-video": "^1.2.6",
+        "react-odometerjs": "^2.1.1",
+        "react-parallax": "^3.1.2",
+        "react-redux": "^7.2.2",
+        "react-slick": "^0.27.13",
+        "react-toastify": "^6.1.0",
+        "redux": "^4.0.5",
+        "redux-thunk": "^2.3.0",
+        "slick-carousel": "^1.8.1",
+        "superagent": "^6.1.0"
+    }
+}
