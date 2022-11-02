@@ -20,6 +20,6 @@ module.exports = {
   },
 };
 
-module.exports = {
-  distDir: "build",
-};
+// module.exports = {
+//   distDir: "build",
+// };
