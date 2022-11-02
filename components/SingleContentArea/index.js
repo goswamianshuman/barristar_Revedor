@@ -1,6 +1,6 @@
 import React from 'react'
-import { Grid } from '@material-ui/core'
-import CheckIcon from '@material-ui/icons/Check';
+import { Grid } from '@mui/material'
+import CheckIcon from '@mui/icons-material/Check';
 const SingleContentArea = ({ className = "", avatar, service }) => {
     return (
         <Grid className={`singleContentArea ${className}`}>
