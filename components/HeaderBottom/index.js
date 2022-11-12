@@ -41,17 +41,9 @@ const HeaderBottom = (props) => {
             <ul className="mainMenuWrap">
               <li>
                 <Link legacyBehavior href="/">
-                  <a
-                    className={
-                      router.pathname == "/" || router.pathname == "/home-two"
-                        ? "active"
-                        : ""
-                    }
-                  >
-                    Home <KeyboardArrowDownOutlinedIcon />
-                  </a>
+                  <a className={router.pathname == "/" ? "active" : ""}>Home</a>
                 </Link>
-                <ul className="subMenu">
+                {/* <ul className="subMenu">
                   <li>
                     <Link legacyBehavior href="/">
                       <a className={router.pathname == "/" ? "active" : ""}>
@@ -70,7 +62,7 @@ const HeaderBottom = (props) => {
                       </a>
                     </Link>
                   </li>
-                </ul>
+                </ul> */}
               </li>
               <li>
                 <Link legacyBehavior href="/about">
