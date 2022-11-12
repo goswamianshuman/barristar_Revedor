@@ -46,7 +46,7 @@ const FooterArea = () => {
             <Grid className="footerLogo">
               <Link legacyBehavior href="/">
                 <p>
-                  <img src="/images/logo/logo.png" alt="logo" />
+                  <img src="/images/logo/logo2.png" alt="logo" />
                 </p>
               </Link>
               <p>
@@ -80,7 +80,7 @@ const FooterArea = () => {
       <Grid className="footerBottomArea">
         <Grid container spacing={3} className="container">
           <Grid item md={8} sm={10} xs={12}>
-            <span>Privacy Policy | © 2020 Barristar. All rights reserved</span>
+            <span>Privacy Policy | © 2022 Revedor. All rights reserved</span>
           </Grid>
           <Grid item md={4} sm={2} xs={12}>
             <ul className="socialListFooter">
