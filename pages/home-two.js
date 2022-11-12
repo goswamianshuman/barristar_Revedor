@@ -72,26 +72,26 @@ const HomePageTwo = () => {
         title="How Can We Help You"
         subTitle="Area Of Practice"
       />
-      <Portfolio
+      {/* <Portfolio
         title="Our Resent Case Studies"
         subTitle="Here Our Best Work"
         portfolioItem={portfolio}
-      />
-      <Testmonial />
+      /> */}
+      {/* <Testmonial /> */}
       <ContactArea />
       <TeamMember
         title="Qualified Attorneys "
         subTitle="Meet Our Experts"
         slider={true}
       />
-      <CounterArea />
+      {/* <CounterArea /> */}
       <BlogArea
         className="blogArea"
         title="Latest News"
         subTitle="From Our Blog
                 "
       />
-      <NewsLetter />
+      {/* <NewsLetter /> */}
     </Fragment>
   );
 };

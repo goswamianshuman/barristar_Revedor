@@ -14,17 +14,19 @@ const HeaderTop = (props) => {
         <Grid item sm={6} md={5} lg={5} xs={12}>
           <ul className="d-flex accountLoginArea">
             <li>
-              <RoomOutlinedIcon /> 121 King Street, Melbourne , Australia
+              <RoomOutlinedIcon />
+              Incuspaze, Unit 408, 4th Floor, Apollo Premier Building, Vijay
+              Nagar Square, Indore, M.P 452010
             </li>
           </ul>
         </Grid>
         <Grid item sm={6} md={4} lg={5} xs={12}>
           <ul className="headerContact">
             <li>
-              <PhoneOutlinedIcon /> 3164-5456854
+              <PhoneOutlinedIcon /> +917022249728
             </li>
             <li>
-              <QueryBuilderOutlinedIcon /> 9AM - PM
+              <QueryBuilderOutlinedIcon /> 9AM - 9PM
             </li>
           </ul>
         </Grid>
