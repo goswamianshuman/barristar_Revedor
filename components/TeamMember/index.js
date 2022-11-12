@@ -9,51 +9,7 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 import SectionTitle from "../Title";
-
-const teams = [
-  {
-    name: "Alecgander Harry",
-    level: "Business Lawyer",
-    image: "/images/expert/1.jpg",
-    id: 1,
-    socialMedia: ["facebook", "twitter", "linkedin"],
-  },
-  {
-    name: "Lily Watson",
-    level: "Family Lawyer",
-    image: "/images/expert/2.jpg",
-    id: 2,
-    socialMedia: ["facebook", "twitter", "linkedin"],
-  },
-  {
-    name: "Willam Stephen",
-    level: "Criminal Lawyer",
-    image: "/images/expert/3.jpg",
-    id: 3,
-    socialMedia: ["facebook", "twitter", "linkedin", "instagram"],
-  },
-  {
-    name: "Eshan Golly",
-    level: "Business Lawyer",
-    image: "/images/expert/4.jpg",
-    id: 4,
-    socialMedia: ["facebook", "twitter", "linkedin"],
-  },
-  {
-    name: "Daniel Dambeldor",
-    level: "Family Lawyer",
-    image: "/images/expert/5.jpg",
-    id: 5,
-    socialMedia: ["facebook", "twitter", "linkedin"],
-  },
-  {
-    name: "Darcy Alec",
-    level: "Criminal Lawyer",
-    image: "/images/expert/6.jpg",
-    id: 6,
-    socialMedia: ["facebook", "twitter", "linkedin"],
-  },
-];
+import { teams, teams_text } from "../../data/home";
 
 const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
   <Button
@@ -126,7 +82,10 @@ const TeamMember = ({ className = "", title, subTitle, slider, noGutters }) => {
     <Grid className={`teamArea ${className}`}>
       <Grid container spacing={!noGutters ? 0 : 4} className="container">
         <Grid item xs={12}>
-          <SectionTitle title={title} subTitle={subTitle} />
+          <SectionTitle
+            title={teams_text[0].title}
+            subTitle={teams_text[0].subTitle}
+          />
         </Grid>
         {slider ? (
           <Grid item xs={12}>

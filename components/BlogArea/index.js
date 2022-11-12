@@ -2,46 +2,27 @@ import React from "react";
 import Link from "next/link";
 import { Grid } from "@mui/material";
 import SectionTitle from "../Title";
+import { blogs, blogs_text } from "../../data/home";
 
-const blogs = [
-  {
-    images: "/images/blog/1.jpg",
-    title: "Justice May For You If You Are Innocent",
-    avatar: "/images/blog-page/6.jpg",
-    name: "By Aliza",
-    time: "Oct 12,2020",
-    id: 1,
-  },
-  {
-    images: "/images/blog/2.jpg",
-    title: "Justice May For You If You Are Innocent",
-    avatar: "/images/blog-page/6.jpg",
-    name: "By Aliza",
-    time: "Oct 12,2020",
-    id: 2,
-  },
-  {
-    images: "/images/blog/3.jpg",
-    title: "Justice May For You If You Are Innocent",
-    avatar: "/images/blog-page/6.jpg",
-    name: "By Aliza",
-    time: "Oct 12,2020",
-    id: 3,
-  },
-];
-
-const BlogArea = ({ className = "", title, subTitle }) => {
+const BlogArea = ({ className = "" }) => {
   return (
     <Grid className={`blogArea ${className}`}>
       <Grid container spacing={4} className="container">
         <Grid item xs={12}>
-          <SectionTitle title={title} subTitle={subTitle} />
+          <SectionTitle
+            title={blogs_text[0].title}
+            subTitle={blogs_text[0].subTitle}
+          />
         </Grid>
         {blogs.map((blog) => (
           <Grid key={blog.id} item md={4} sm={6} xs={12}>
             <Grid className="blogWrap">
               <Grid className="blogImage">
-                <Link legacyBehavior as={`/blog/${blog.id}`} href={`/blog/[id]`}>
+                <Link
+                  legacyBehavior
+                  as={`/blog/${blog.id}`}
+                  href={`/blog/[id]`}
+                >
                   <p>
                     <img src={blog.images} alt={blog.title} />
                   </p>
@@ -49,7 +30,11 @@ const BlogArea = ({ className = "", title, subTitle }) => {
               </Grid>
               <Grid className="blogContent">
                 <h3>
-                  <Link legacyBehavior as={`/blog/${blog.id}`} href={`/blog/[id]`}>
+                  <Link
+                    legacyBehavior
+                    as={`/blog/${blog.id}`}
+                    href={`/blog/[id]`}
+                  >
                     <p>{blog.title}</p>
                   </Link>
                 </h3>

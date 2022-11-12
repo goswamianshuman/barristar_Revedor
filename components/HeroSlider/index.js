@@ -4,37 +4,7 @@ import Slider from "react-slick";
 import Link from "next/link";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
-
-const heroSliders = [
-  {
-    images: "/images/slider/slide-4.jpg",
-    title: "We Fight For Your Justice",
-    subTitle: "As Like A Friend.",
-    text: "The Most Talented Law Frim",
-    button: "Contact us now",
-  },
-  {
-    images: "/images/slider/slide-5.jpg",
-    title: "We Fight For Your Justice",
-    subTitle: "As Like A Friend.",
-    text: "The Most Talented Law Frim",
-    button: "Contact us now",
-  },
-  {
-    images: "/images/slider/slide-22.jpg",
-    title: "We Fight For Your Justice",
-    subTitle: "As Like A Friend.",
-    text: "The Most Talented Law Frim",
-    button: "Contact us now",
-  },
-  {
-    images: "/images/slider/slide-1.jpg",
-    title: "We Fight For Your Justice",
-    subTitle: "As Like A Friend.",
-    text: "The Most Talented Law Frim",
-    button: "Contact us now",
-  },
-];
+import { heroSliders } from "../../data/home";
 
 const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
   <Button

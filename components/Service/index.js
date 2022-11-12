@@ -1,27 +1,8 @@
 import React from "react";
 import { Parallax } from "react-parallax";
 import { Grid } from "@mui/material";
-import PersonOutlineTwoToneIcon from "@mui/icons-material/PersonOutlineTwoTone";
-import HourglassFullTwoToneIcon from "@mui/icons-material/HourglassFullTwoTone";
-import PeopleAltTwoToneIcon from "@mui/icons-material/PeopleAltTwoTone";
+import { services } from "../../data/home";
 
-const services = [
-  {
-    icon: <PersonOutlineTwoToneIcon />,
-    subtitle: "Book Your",
-    title: "Appointment",
-  },
-  {
-    icon: <HourglassFullTwoToneIcon />,
-    subtitle: "Get Free",
-    title: "Expert Advice",
-  },
-  {
-    icon: <PeopleAltTwoToneIcon />,
-    subtitle: "You Can Easily",
-    title: "Join Our Team",
-  },
-];
 const Service = ({ className = "" }) => {
   return (
     <Parallax

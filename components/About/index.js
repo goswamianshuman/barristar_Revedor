@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import PlayArrowTwoToneIcon from "@mui/icons-material/PlayArrowTwoTone";
 import { Button, Grid } from "@mui/material";
+import { aboutData } from "../../data/home";
 
 const About = ({
   subTitle,
@@ -14,13 +15,14 @@ const About = ({
   changeOrder = "",
 }) => {
   const [video, setVideo] = useState(false);
+  console.log();
   return (
     <Grid className={`aboutArea ${className}`}>
       <Grid container spacing={4} className="container">
         <Grid item md={6} xs={12} className="changeOrder">
           <Grid className="aboutImageWrap">
-            <img src={images} alt="" />
-            {videoId && (
+            <img src={aboutData[0].images} alt="" />
+            {aboutData[0].videoId && (
               <Button onClick={() => setVideo(true)} className="playBtn">
                 <PlayArrowTwoToneIcon />
               </Button>
@@ -29,9 +31,11 @@ const About = ({
         </Grid>
         <Grid item md={6} xs={12}>
           <Grid className="aboutContent">
-            {subTitle && <span className="subtitle">{subTitle}</span>}
-            <h2>{title}</h2>
-            {pragraphs.map((text) => (
+            {aboutData[0].subTitle && (
+              <span className="subtitle">{aboutData[0].subTitle}</span>
+            )}
+            <h2>{aboutData[0].title}</h2>
+            {aboutData[0].pragraphs.aboutText.map((text) => (
               <p key={text}>{text}</p>
             ))}
             <Link legacyBehavior href="/about">
@@ -39,9 +43,9 @@ const About = ({
                 More About Us..
               </Button>
             </Link>
-            {signature && (
+            {aboutData[0].signature && (
               <Grid className="signature">
-                <img src={signature} alt="" />
+                <img src={aboutData[0].signature} alt="" />
               </Grid>
             )}
           </Grid>
