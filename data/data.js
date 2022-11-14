@@ -11,7 +11,7 @@ import CastForEducationTwoToneIcon from "@mui/icons-material/CastForEducationTwo
 export const heroSliders = [
   {
     images: "/images/slider/slide-4.jpg",
-    title: "We Fight For Your Justice",
+    title: "We Fight For Your Justice 1",
     subTitle: "As Like A Friend.",
     text: "The Most Talented Law Frim",
     button: "Contact us now",
