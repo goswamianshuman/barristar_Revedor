@@ -2,21 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import { Grid, Hidden } from "@mui/material";
 import FormatQuoteIcon from "@mui/icons-material/FormatQuote";
-
-const sliders = [
-  {
-    text: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,",
-    images: "/images/testimonial/2.png",
-    title: "Jhony Goaver",
-    subTitle: "CEO of American BDS",
-  },
-  {
-    text: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,",
-    images: "/images/testimonial/2.png",
-    title: "Jhony Goaver",
-    subTitle: "CEO of American BDS",
-  },
-];
+import { sliders } from "../../data/data";
 const settings = {
   dots: true,
   infinite: true,

@@ -9,7 +9,7 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 import SectionTitle from "../Title";
-import { teams, teams_text } from "../../data/home";
+import { teams, teams_text } from "../../data/data";
 
 const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
   <Button

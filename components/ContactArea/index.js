@@ -2,7 +2,8 @@ import React from "react";
 import Form from "../Form";
 import { Parallax } from "react-parallax";
 import { Grid } from "@mui/material";
-import { contact_section_item } from "../../data/home";
+import { contact_section_item } from "../../data/data";
+
 const ContactArea = ({ className = "" }) => {
   return (
     <Parallax

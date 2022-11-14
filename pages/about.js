@@ -26,24 +26,12 @@ const AboutPage = () => {
       />
       <Service className="bgColor" />
       <About className="aboutAreaStyleTwo" />
-      <ServiceArea
-        className="ourServiceAreaStyleTwo"
-        title="How Can We Help You"
-        subTitle="Area Of Practice"
-      />
+      <ServiceArea className="ourServiceAreaStyleTwo" />
       <Testmonial />
       <CounterArea fullWidth={true} className="counterAreaStyleTwo" />
-      <TeamMember
-        title="Qualified Attorneys "
-        subTitle="Meet Our Experts"
-        slider={true}
-      />
-      <BlogArea
-        className="blogArea"
-        title="Latest News"
-        subTitle="From Our Blog"
-      />
-      <NewsLetter />
+      <TeamMember slider={true} />
+      <BlogArea className="blogArea" />
+      {/* <NewsLetter /> */}
     </Fragment>
   );
 };

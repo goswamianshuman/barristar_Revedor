@@ -8,67 +8,12 @@ import SingleContentArea from "../../components/SingleContentArea";
 import SearchSidebar from "../../components/SearchSidebar";
 import RecentPosts from "../../components/RecentPosts";
 import Portfolio from "../../components/Portfolio";
-const portfolios = [
-  {
-    image: "/images/studies/1.jpg",
-    title: "General Service",
-    subtitle: "Corporate",
-    id: 1,
-  },
-  {
-    image: "/images/studies/2.jpg",
-    title: "Personal Issue",
-    subtitle: "General",
-    id: 2,
-  },
-  {
-    image: "/images/studies/3.jpg",
-    title: "Business Accounting",
-    subtitle: "Business",
-    id: 3,
-  },
-  {
-    image: "/images/studies/4.jpg",
-    title: "Accounting issue",
-    subtitle: "Criminal",
-    id: 4,
-  },
-  {
-    image: "/images/studies/5.jpg",
-    title: "Business Accounting",
-    subtitle: "Family Issue",
-    id: 5,
-  },
-  {
-    image: "/images/studies/1.jpg",
-    title: "General Service",
-    subtitle: "Corporate",
-    id: 6,
-  },
-  {
-    image: "/images/studies/2.jpg",
-    title: "Personal Issue",
-    subtitle: "General",
-    id: 7,
-  },
-  {
-    image: "/images/studies/3.jpg",
-    title: "Business Accounting",
-    subtitle: "Business",
-    id: 8,
-  },
-  {
-    image: "/images/studies/4.jpg",
-    title: "Accounting issue",
-    subtitle: "Criminal",
-    id: 9,
-  },
-];
+import { portfolioItem } from "../../data/data";
 
 function getPostDataById(id) {
-  for (let i = 0; i < portfolios.length; i++) {
-    if (portfolios[i].id === parseInt(id)) {
-      return portfolios[i];
+  for (let i = 0; i < portfolioItem.length; i++) {
+    if (portfolioItem[i].id === parseInt(id)) {
+      return portfolioItem[i];
     }
   }
 }
@@ -108,10 +53,9 @@ const CaseStadiesDetails = ({ id }) => {
         title="Our Resent Case Studies"
         subTitle="Here Our Best Work"
         fullWidth={true}
-        portfolioItem={portfolios.slice(3, 6)}
+        portfolioItem={portfolioItem.slice(3, 6)}
         className="portfolioAreaStyleTwo portfolioAreaStyleFour"
       />
-      <NewsLetter />
     </Fragment>
   );
 };

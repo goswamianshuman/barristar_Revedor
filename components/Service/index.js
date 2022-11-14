@@ -1,7 +1,7 @@
 import React from "react";
 import { Parallax } from "react-parallax";
 import { Grid } from "@mui/material";
-import { services } from "../../data/home";
+import { services } from "../../data/data";
 
 const Service = ({ className = "" }) => {
   return (

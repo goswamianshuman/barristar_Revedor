@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { Grid } from "@mui/material";
 import SectionTitle from "../Title";
-import { blogs, blogs_text } from "../../data/home";
+import { blogs, blogs_text } from "../../data/data";
 
 const BlogArea = ({ className = "" }) => {
   return (

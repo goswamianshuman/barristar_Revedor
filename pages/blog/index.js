@@ -45,7 +45,6 @@ const Blog = () => {
           </Grid>
         </Grid>
       </Grid>
-      <NewsLetter />
     </Fragment>
   );
 };

@@ -18,13 +18,7 @@ const Team = () => {
         breadcumbMenu={breadcumbMenu}
         background="/images/breadcumb/1.jpg"
       />
-      <TeamMember
-        title="Qualified Attorneys "
-        subTitle="Meet Our Experts"
-        className="ptb100"
-        noGutters={true}
-      />
-      <NewsLetter />
+      <TeamMember className="ptb100" noGutters={true} />
     </Fragment>
   );
 };

@@ -1,17 +1,5 @@
 import React from "react";
-const tags = [
-  "Attorney",
-  "Lawyer",
-  "Accident",
-  "Consultation",
-  "Fraud",
-  "Car",
-  "Law",
-  "Immigration",
-  "Criminal",
-  "Business",
-  "Corporate",
-];
+import { tags } from "../../data/data";
 
 const Tags = () => {
   return (

@@ -4,6 +4,7 @@ import Head from "next/head";
 import Breadcumb from "../../components/Breadcumb";
 import NewsLetter from "../../components/Newsletter";
 import Form from "../../components/Form";
+import { contactData } from "../../data/data";
 
 const breadcumbMenu = [{ name: "Home", route: "/" }, { name: "Contact" }];
 
@@ -24,19 +25,15 @@ const Contact = () => {
         <Grid container spacing={4} className="container">
           <Grid item md={7} xs={12}>
             <Grid className="contactUsInfo">
-              <h3>Our Contacts</h3>
-              <p>
-                Contrary to popular belief, Lorem Ipsum is not simply random
-                text. It has roots in a piece of classical Latin literature from
-                45 BC, making it over 2000 years old.
-              </p>
+              <h3>{contactData[0].title}</h3>
+              <p>{contactData[0].detail}</p>
               <h4>Address</h4>
-              <span>245 King Street, Touterie Victoria 8520 Australia</span>
+              <span>{contactData[0].address}</span>
               <h4>Phone</h4>
-              <span>0-123-456-7890</span>
-              <span>0-123-456-7890</span>
+              <span>{contactData[0].phone_one}</span>
+              <span>{contactData[0].phone_two}</span>
               <h4>Email</h4>
-              <span>sample@gmail.com</span>
+              <span>{contactData[0].email}</span>
             </Grid>
           </Grid>
           <Grid item md={5} xs={12}>
@@ -47,8 +44,6 @@ const Contact = () => {
           </Grid>
         </Grid>
       </Grid>
-
-      <NewsLetter />
     </Fragment>
   );
 };

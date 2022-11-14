@@ -22,14 +22,10 @@ const Practice = () => {
         background="/images/breadcumb/1.jpg"
       />
       <Service className="bgColor" />
-      <ServiceArea
-        className="ourServiceAreaStyleThree bgFFF"
-        title="How Can We Help You"
-        subTitle="Area Of Practice"
-      />
-      <PricingTable title="Pricing Table" subTitle="Our Pricing Plan" />
+      <ServiceArea className="ourServiceAreaStyleThree bgFFF" />
+      <PricingTable />
       <Testmonial className="pt100" />
-      <NewsLetter />
+      {/* <NewsLetter /> */}
     </Fragment>
   );
 };

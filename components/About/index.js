@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import PlayArrowTwoToneIcon from "@mui/icons-material/PlayArrowTwoTone";
 import { Button, Grid } from "@mui/material";
-import { aboutData } from "../../data/home";
+import { aboutData } from "../../data/data";
 
 const About = ({
   subTitle,

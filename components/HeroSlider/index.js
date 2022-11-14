@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import Link from "next/link";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
-import { heroSliders } from "../../data/home";
+import { heroSliders } from "../../data/data";
 
 const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
   <Button

@@ -2,12 +2,8 @@ import React from "react";
 import { Parallax } from "react-parallax";
 import { Grid } from "@mui/material";
 import dynamic from "next/dynamic";
-const counters = [
-  { value: "95", title: "Cases Won", level: "%" },
-  { value: "863", title: "Trusted Client" },
-  { value: "126", title: "Dedicated Lawyer", level: "+" },
-  { value: "25", title: "Case Dismissed", level: "%" },
-];
+import { counters } from "../../data/data";
+
 const Odometer = dynamic(import("react-odometerjs"), {
   ssr: false,
   loading: () => 0,

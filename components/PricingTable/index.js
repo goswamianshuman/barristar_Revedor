@@ -3,29 +3,17 @@ import { Grid, Button } from "@mui/material";
 import Link from "next/link";
 import MoneyIcon from "@mui/icons-material/Money";
 import SectionTitle from "../Title";
-const pricingpanel = [
-  {
-    title: "Started Plan",
-    text: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-    price: "$120",
-  },
-  {
-    title: "Basic Plan",
-    text: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-    price: "$150",
-  },
-  {
-    title: "Advanced Plan",
-    text: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-    price: "$180",
-  },
-];
+import { pricingpanel, pricing_text } from "../../data/data";
+
 const PricingTable = ({ className = "", title, subTitle }) => {
   return (
     <Grid className={`pricingTableArea ${className}`}>
       <Grid container spacing={4} className="container">
         <Grid item xs={12}>
-          <SectionTitle title={title} subTitle={subTitle} />
+          <SectionTitle
+            title={pricing_text[0].title}
+            subTitle={pricing_text[0].subTitle}
+          />
         </Grid>
         {pricingpanel.map((pricing, i) => (
           <Grid key={i} item md={4} sm={4} xs={12}>

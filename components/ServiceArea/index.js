@@ -3,7 +3,7 @@ import { Grid } from "@mui/material";
 import Link from "next/link";
 import { Parallax } from "react-parallax";
 import SectionTitle from "../Title";
-import { services_section, services_section_item } from "../../data/home";
+import { services_section, services_section_item } from "../../data/data";
 
 const ServiceArea = ({ className = "" }) => {
   return (

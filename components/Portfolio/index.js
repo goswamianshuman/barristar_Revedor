@@ -2,19 +2,17 @@ import React from "react";
 import { Grid } from "@mui/material";
 import Link from "next/link";
 import SectionTitle from "../Title";
+import { portfolioItem, portfolio_text } from "../../data/data";
 
-const Portfolio = ({
-  title,
-  subTitle,
-  className = "",
-  fullWidth,
-  portfolioItem,
-}) => {
+const Portfolio = ({ className = "", fullWidth }) => {
   return (
     <Grid className={`portfolioArea ${className}`}>
       <Grid container spacing={4} className="container">
         <Grid item xs={12}>
-          <SectionTitle title={title} subTitle={subTitle} />
+          <SectionTitle
+            title={portfolio_text[0].title}
+            subTitle={portfolio_text[0].subTitle}
+          />
         </Grid>
       </Grid>
 
@@ -26,7 +24,8 @@ const Portfolio = ({
               <Grid className="portfolioContent">
                 <p>{portfolio.subtitle}</p>
                 <h3>
-                 <Link legacyBehavior
+                  <Link
+                    legacyBehavior
                     href={`/case-stadies/[id]`}
                     as={`/case-stadies/${portfolio.id}`}
                   >
@@ -46,7 +45,8 @@ const Portfolio = ({
                 <Grid className="portfolioContent">
                   <p>{portfolio.subtitle}</p>
                   <h3>
-                   <Link legacyBehavior
+                    <Link
+                      legacyBehavior
                       href={`/case-stadies/[id]`}
                       as={`/case-stadies/${portfolio.id}`}
                     >

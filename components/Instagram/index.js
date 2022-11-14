@@ -1,14 +1,6 @@
 import React from "react";
 import { Grid } from "@mui/material";
-
-const instagrams = [
-  "/images/instragram/1.jpg",
-  "/images/instragram/2.jpg",
-  "/images/instragram/3.jpg",
-  "/images/instragram/4.jpg",
-  "/images/instragram/5.jpg",
-  "/images/instragram/6.jpg",
-];
+import { instagrams } from "../../data/data";
 
 const Instagram = () => {
   return (
