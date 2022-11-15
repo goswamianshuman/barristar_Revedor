@@ -38,7 +38,7 @@ const Contact = () => {
           </Grid>
           <Grid item md={5} xs={12}>
             <Grid className="contactUSForm">
-              <h3>Quick Contact Form</h3>
+              <h3>Book Your Appointment</h3>
               <Form addressInfo={true} />
             </Grid>
           </Grid>

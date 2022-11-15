@@ -11,7 +11,7 @@ import CastForEducationTwoToneIcon from "@mui/icons-material/CastForEducationTwo
 export const heroSliders = [
   {
     images: "/images/slider/slide-4.jpg",
-    title: "We Fight For Your Justice 1",
+    title: "We Fight For Your Justice",
     subTitle: "As Like A Friend.",
     text: "The Most Talented Law Frim",
     button: "Contact us now",
@@ -60,7 +60,7 @@ export const services = [
 
 //about data
 const aboutText = [
-  "Contrary to to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at",
+  "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at",
   'and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum',
 ];
 
@@ -343,11 +343,12 @@ export const contactData = [
   {
     title: "Our Contacts",
     detail:
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.",
-    address: "245 King Street, Touterie Victoria 8520 Australia",
-    phone_one: "0-123-456-7890",
-    phone_two: "0-123-456-7890",
-    email: "sample@gmail.com",
+      "We are a team of interesting, creative, hard-working people that believe in going all out to fulfill your dreams and make sure that quality should be tight and experience should be stellar. overtime we have ventured into increasingly challenging products and services, upgrading ourselves to stay ahead in the game.",
+    address:
+      "Incuspaze, Unit 408, 4th Floor, Apollo Premier Building, Vijay Nagar Square, Indore, M.P 452010",
+    phone_one: "+917022249728",
+    phone_two: "+918889891632",
+    email: "revedorindia@gmail.com",
   },
 ];
 
@@ -477,3 +478,41 @@ export const blog = [
     id: 5,
   },
 ];
+
+//footer
+export const footerLinks = [
+  {
+    title: "Quick Link",
+    menus: [
+      { name: "Home", route: "/" },
+      { name: "Practice Area", route: "practice" },
+      { name: "Our Team", route: "team" },
+      // { name: "Recent Case", route: "case" },
+      // { name: "Our Blog", route: "blog" },
+    ],
+  },
+  {
+    title: "Practice Area",
+    menus: [
+      { name: "Family Law", route: "home" },
+      { name: "Criminal Law", route: "home" },
+      { name: "Parsonal Injury", route: "home" },
+      { name: "Real Estate Law", route: "home" },
+      { name: "Business Law", route: "home" },
+    ],
+  },
+  {
+    title: "Contact Us",
+    menus: [
+      { name: "Head Office Address" },
+      { name: "Incuspaze, Unit 408," },
+      { name: "4th Floor, Apollo Premier Building," },
+      { name: "Vijay Nagar Square, Indore," },
+      { name: "India " },
+      { name: "Phone: +917022249728" },
+      { name: "Email: revedorindia@gmail.com" },
+    ],
+  },
+];
+
+// Incuspaze, Unit 408, 4th Floor, Apollo Premier Building, Vijay Nagar Square, Indore, M.P 452010

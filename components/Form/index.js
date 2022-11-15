@@ -167,7 +167,7 @@ class Form extends Component {
               {this.state.error.phone && <p>{this.state.error.phone}</p>}
             </Grid>
           </Grid>
-          <Grid item sm={6} xs={12}>
+          <Grid item sm={100} xs={12}>
             <Grid className="formInput">
               <input
                 placeholder="Email"
@@ -180,7 +180,7 @@ class Form extends Component {
               {this.state.error.email && <p>{this.state.error.email}</p>}
             </Grid>
           </Grid>
-          <Grid item sm={6} xs={12}>
+          {/* <Grid item sm={6} xs={12}>
             <Grid className="formInput">
               {this.props.addressInfo ? (
                 <Grid className="formInput">
@@ -208,7 +208,7 @@ class Form extends Component {
                 </select>
               )}
             </Grid>
-          </Grid>
+          </Grid> */}
           <Grid item xs={12}>
             <Grid className="formInput">
               <textarea

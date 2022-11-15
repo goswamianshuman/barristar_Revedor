@@ -916,7 +916,7 @@ body {
                 li {
                     margin-bottom: 10px;
                     color: #ddd;
-
+                    cursor: pointer;
                     &:last-child {
                         margin-bottom: 0;
                     }
@@ -925,6 +925,7 @@ body {
                         color: #ddd;
                         display: inline-block;
                         font-size: 15px;
+                        
 
                         &:hover {
                             color: #c0b596;
@@ -978,6 +979,10 @@ body {
 }
 
 .contactForm {
+    @media (max-width:1200px) {
+        max-width: 95%;
+        margin-right: auto;
+    }
     .formInput {
 
         input,

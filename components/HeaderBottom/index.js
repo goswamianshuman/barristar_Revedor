@@ -85,7 +85,7 @@ const HeaderBottom = (props) => {
                   </a>
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link legacyBehavior href="/case-stadies">
                   <a
                     className={
@@ -112,7 +112,7 @@ const HeaderBottom = (props) => {
                     Blog
                   </a>
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link legacyBehavior href="/attorneys">
                   <a

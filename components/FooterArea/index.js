@@ -4,38 +4,7 @@ import { Grid } from "@mui/material";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
-const footerLinks = [
-  {
-    title: "Quick Link",
-    menus: [
-      { name: "Home", route: "/" },
-      { name: "Practice Area", route: "practice" },
-      { name: "Our Team", route: "team" },
-      { name: "Recent Case", route: "case" },
-      { name: "Our Blog", route: "blog" },
-    ],
-  },
-  {
-    title: "Practice Area",
-    menus: [
-      { name: "Family Law", route: "home" },
-      { name: "Criminal Law", route: "home" },
-      { name: "Parsonal Injury", route: "home" },
-      { name: "Real Estate Law", route: "home" },
-      { name: "Business Law", route: "home" },
-    ],
-  },
-  {
-    title: "Contact Us",
-    menus: [
-      { name: "Head Office Address" },
-      { name: "121 King Street, Melbourne West," },
-      { name: "Australia" },
-      { name: "Phone: 888 123-4587" },
-      { name: "Email: info@example.com" },
-    ],
-  },
-];
+import { footerLinks } from "../../data/data";
 
 const FooterArea = () => {
   return (
@@ -50,8 +19,11 @@ const FooterArea = () => {
                 </p>
               </Link>
               <p>
-                Contrary to popular belief, Lorem Ipsum is not simply random
-                text. It has roots in a piece of classical Latin literature
+                We are a team of interesting, creative, hard-working people that
+                believe in going all out to fulfill your dreams and make sure
+                that quality should be tight and experience should be stellar.
+                overtime we have ventured into increasingly challenging products
+                and services, upgrading ourselves to stay ahead in the game.
               </p>
             </Grid>
           </Grid>
@@ -80,7 +52,7 @@ const FooterArea = () => {
       <Grid className="footerBottomArea">
         <Grid container spacing={3} className="container">
           <Grid item md={8} sm={10} xs={12}>
-            <span>Privacy Policy | © 2022 Revedor. All rights reserved</span>
+            <span>Privacy Policy | © 2022 Villy. All rights reserved</span>
           </Grid>
           <Grid item md={4} sm={2} xs={12}>
             <ul className="socialListFooter">
