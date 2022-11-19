@@ -14,9 +14,9 @@ const FooterArea = () => {
           <Grid item lg={3} sm={6} xs={12}>
             <Grid className="footerLogo">
               <Link legacyBehavior href="/">
-                <p>
+                <a>
                   <img src="/images/logo/logo2.png" alt="logo" />
-                </p>
+                </a>
               </Link>
               <p>
                 We are a team of interesting, creative, hard-working people that

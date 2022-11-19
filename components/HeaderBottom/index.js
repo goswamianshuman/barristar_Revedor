@@ -24,9 +24,9 @@ const HeaderBottom = (props) => {
           <Grid item md={3} sm={6} xs={8}>
             <Grid className="logo">
               <Link legacyBehavior href="/">
-                <p>
+                <a>
                   <img src="/images/logo/logo2.png" alt="logo" />
-                </p>
+                </a>
               </Link>
             </Grid>
           </Grid>
