@@ -481,16 +481,16 @@ export const blog = [
 
 //footer
 export const footerLinks = [
-  {
-    title: "Quick Link",
-    menus: [
-      { name: "Home", route: "/" },
-      { name: "Practice Area", route: "practice" },
-      { name: "Our Team", route: "team" },
-      // { name: "Recent Case", route: "case" },
-      // { name: "Our Blog", route: "blog" },
-    ],
-  },
+  // {
+  //   title: "Quick Link",
+  //   menus: [
+  //     { name: "Home", route: "/" },
+  //     { name: "Practice Area", route: "practice" },
+  //     { name: "Our Team", route: "team" },
+  //     // { name: "Recent Case", route: "case" },
+  //     // { name: "Our Blog", route: "blog" },
+  //   ],
+  // },
   {
     title: "Practice Area",
     menus: [

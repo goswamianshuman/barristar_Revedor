@@ -35,9 +35,9 @@ const HeaderTop = (props) => {
             <Button
               className="btnStyle btnOutlined btnRadius"
               component="a"
-              href="#"
+              href="/contact"
             >
-              Free Consultation
+              Contact Us
             </Button>
           </Grid>
         </Hidden>

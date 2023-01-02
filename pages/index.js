@@ -65,7 +65,7 @@ const Home = () => {
       <ContactArea />
       <TeamMember slider={true} />
       {/* <CounterArea /> */}
-      <BlogArea className="blogArea" />
+      {/* <BlogArea className="blogArea" /> */}
       {/* <NewsLetter /> */}
     </Fragment>
   );

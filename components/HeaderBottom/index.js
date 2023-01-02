@@ -113,7 +113,7 @@ const HeaderBottom = (props) => {
                   </a>
                 </Link>
               </li> */}
-              <li>
+              {/* <li>
                 <Link legacyBehavior href="/attorneys">
                   <a
                     className={
@@ -126,7 +126,7 @@ const HeaderBottom = (props) => {
                     Attorneys
                   </a>
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link legacyBehavior href="/contact">
                   <a className={router.pathname == "/contact" ? "active" : ""}>
