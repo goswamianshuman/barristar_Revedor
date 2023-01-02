@@ -63,7 +63,7 @@ const Home = () => {
       /> */}
       {/* <Testmonial /> */}
       <ContactArea />
-      <TeamMember slider={true} />
+      {/* <TeamMember slider={true} /> */}
       {/* <CounterArea /> */}
       {/* <BlogArea className="blogArea" /> */}
       {/* <NewsLetter /> */}
