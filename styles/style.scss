@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Playfair+Display:400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700|Playfair+Display:100,200,300,400,500,600,700');
 
 * {
     margin: 0;
@@ -89,6 +89,7 @@ body {
         display: inline-block;
         transition: all .4s ease-in-out 0s;
         font-weight: 400;
+        position: relative;
 
         &.btnRadius {
             border-radius: 30px;
@@ -106,6 +107,7 @@ body {
                 color: #fff;
             }
         }
+
     }
 
     .bgFFF {
@@ -181,13 +183,18 @@ body {
 
     .aboutContent {
         .subtitle {
-            font-size: 16px;
+            font-size: 18px;
             color: #bd9d3f;
             display: block;
         }
 
         h2 {
             margin-bottom: 20px;
+            font-size: 30px;
+        }
+
+        h3 {
+            font-weight: 500;
         }
 
         p {

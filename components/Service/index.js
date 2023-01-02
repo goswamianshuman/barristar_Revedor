@@ -7,7 +7,7 @@ const Service = ({ className = "" }) => {
   return (
     <Parallax
       bgImage="/images/services/1.jpg"
-      bgImageAlt="the cat"
+      bgImageAlt="services image"
       contentClassName={`serviceArea ${className}`}
       strength={200}
     >

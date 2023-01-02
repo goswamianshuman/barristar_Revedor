@@ -35,9 +35,26 @@ const About = ({
               <span className="subtitle">{aboutData[0].subTitle}</span>
             )}
             <h2>{aboutData[0].title}</h2>
-            {aboutData[0].pragraphs.aboutText.map((text) => (
+            {/* {aboutData[0].pragraphs.aboutText.map((text) => (
               <p key={text}>{text}</p>
-            ))}
+            ))} */}
+            <ul>
+              <li>
+                <h3>Transport Pricing</h3>
+                <p>See fixed price before you pay a rupee. No hidden charges</p>
+              </li>
+              <li>
+                <h3>Exports Only</h3>
+                <p>Our lawyers are well versed and expert in their jobs.</p>
+              </li>
+              <li>
+                <h3>24 × 7 At Your Service</h3>
+                <p>
+                  Whether it is 5 in morning or in noon, our doors are always
+                  open for you
+                </p>
+              </li>
+            </ul>
             <Link legacyBehavior href="/about">
               <Button component="a" className="btnStyle">
                 More About Us..

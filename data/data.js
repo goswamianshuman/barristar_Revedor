@@ -60,14 +60,14 @@ export const services = [
 
 //about data
 const aboutText = [
-  "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at",
+  "Transport Pricing",
   'and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum',
 ];
 
 export const aboutData = [
   {
-    title: "Why You Need Us",
-    subTitle: "We Are Expert",
+    title: "Why you should choose me",
+    subTitle: "I am Villy",
     images: "/images/about/1.jpg",
     videoId: "XxVg_s8xAms",
     pragraphs: { aboutText },

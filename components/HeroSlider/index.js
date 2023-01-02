@@ -56,7 +56,7 @@ const HeroSlider = ({ className = "" }) => {
         },
       },
     ],
-  };
+  }; 
   return (
     <Slider className={`heroSliderArea ${className}`} {...settings}>
       {heroSliders.map((slider, i) => (
