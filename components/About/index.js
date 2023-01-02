@@ -45,7 +45,7 @@ const About = ({
               </li>
               <li>
                 <h3>Exports Only</h3>
-                <p>Our lawyers are well versed and expert in their jobs.</p>
+                <p>Our lawyers are well versed and experts in their jobs.</p>
               </li>
               <li>
                 <h3>24 × 7 At Your Service</h3>
