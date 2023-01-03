@@ -56,7 +56,7 @@ const HeroSlider = ({ className = "" }) => {
         },
       },
     ],
-  }; 
+  };
   return (
     <Slider className={`heroSliderArea ${className}`} {...settings}>
       {heroSliders.map((slider, i) => (
@@ -64,11 +64,11 @@ const HeroSlider = ({ className = "" }) => {
           <Grid
             className="slideWrapper"
             style={{
-              background: `url(${slider.images}) no-repeat center center / cover`,
+              background: `url(${slider.images}) no-repeat center / cover`,
             }}
           >
             <Grid container className="container">
-              <Grid item lg={8} xs={12}>
+              <Grid className="heroDetails" item lg={8} xs={12}>
                 <p>{slider.text}</p>
                 <h2>
                   <span>{slider.title}</span> <span>{slider.subTitle}</span>

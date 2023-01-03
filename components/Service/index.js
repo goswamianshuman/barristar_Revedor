@@ -5,26 +5,23 @@ import { services } from "../../data/data";
 
 const Service = ({ className = "" }) => {
   return (
-    <Parallax
-      bgImage="/images/services/1.jpg"
-      bgImageAlt="services image"
-      contentClassName={`serviceArea ${className}`}
-      strength={200}
-    >
-      <Grid container spacing={4} className="container">
-        {services.map((service, i) => (
-          <Grid item md={4} sm={6} xs={12} key={i}>
-            <Grid className="serviceItem">
-              <Grid className="serviceIcon">{service.icon}</Grid>
-              <Grid className="serviceText">
-                <span>{service.subtitle}</span>
-                <h3>{service.title}</h3>
-              </Grid>
-            </Grid>
-          </Grid>
-        ))}
+    <div className={`serviceArea ${className}`}>
+      <Grid container className="container">
+        <div className="serviceGrid">
+          {services.map((service, i) => (
+            <div key={i} className="serviceWrap">
+              <div className="serviceItem">
+                <div className="serviceIcon">{service.icon}</div>
+                <div className="serviceText">
+                  <span>{service.subtitle}</span>
+                  <h3>{service.title}</h3>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
       </Grid>
-    </Parallax>
+    </div>
   );
 };
 export default Service;

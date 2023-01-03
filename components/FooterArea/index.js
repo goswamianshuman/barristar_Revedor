@@ -11,7 +11,7 @@ const FooterArea = () => {
     <footer className="footerArea">
       <Grid className="footerTopArea">
         <Grid container spacing={3} className="container">
-          <Grid item lg={3} sm={6} xs={12}>
+          <Grid item lg={3} sm={6} xs={11}>
             <Grid className="footerLogo">
               <Link legacyBehavior href="/">
                 <a>
@@ -28,7 +28,7 @@ const FooterArea = () => {
             </Grid>
           </Grid>
           {footerLinks.map((menu, i) => (
-            <Grid key={i} item lg={3} sm={6} xs={12}>
+            <Grid key={i} item lg={3} sm={6} xs={11}>
               <div className="footerWrap">
                 <h3>{menu.title}</h3>
                 <ul>
@@ -51,10 +51,10 @@ const FooterArea = () => {
       </Grid>
       <Grid className="footerBottomArea">
         <Grid container spacing={3} className="container">
-          <Grid item md={8} sm={10} xs={12}>
+          <Grid item md={8} sm={10} xs={11}>
             <span>Privacy Policy | © 2023 Villy. All rights reserved</span>
           </Grid>
-          <Grid item md={4} sm={2} xs={12}>
+          <Grid item md={4} sm={2} xs={11}>
             <ul className="socialListFooter">
               <li>
                 <a href="#">

@@ -7,21 +7,16 @@ import { services_section, services_section_item } from "../../data/data";
 
 const ServiceArea = ({ className = "" }) => {
   return (
-    <Parallax
-      bgImage="/images/practice/1.jpg"
-      bgImageAlt="the cat"
-      contentClassName={`ourServiceArea ${className}`}
-      strength={200}
-    >
+    <div className={`ourServiceArea ${className}`}>
       <Grid container spacing={4} className="container">
-        <Grid item xs={12}>
+        <Grid item xs={11}>
           <SectionTitle
             title={services_section_item[0].title}
             subTitle={services_section_item[0].subTitle}
           />
         </Grid>
         {services_section.map((service, index) => (
-          <Grid item xs={12} lg={4} sm={6} key={index}>
+          <Grid item xs={11} lg={4} sm={6} key={index}>
             <Grid className="serviceWrap">
               <Grid className="serviceIcon">{service.icon}</Grid>
               <Grid className="serviceContent">
@@ -40,7 +35,7 @@ const ServiceArea = ({ className = "" }) => {
           </Grid>
         ))}
       </Grid>
-    </Parallax>
+    </div>
   );
 };
 export default ServiceArea;

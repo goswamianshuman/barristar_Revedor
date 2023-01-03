@@ -8,14 +8,14 @@ const BlogArea = ({ className = "" }) => {
   return (
     <Grid className={`blogArea ${className}`}>
       <Grid container spacing={4} className="container">
-        <Grid item xs={12}>
+        <Grid item xs={11}>
           <SectionTitle
             title={blogs_text[0].title}
             subTitle={blogs_text[0].subTitle}
           />
         </Grid>
         {blogs.map((blog) => (
-          <Grid key={blog.id} item md={4} sm={6} xs={12}>
+          <Grid key={blog.id} item md={4} sm={6} xs={11}>
             <Grid className="blogWrap">
               <Grid className="blogImage">
                 <Link

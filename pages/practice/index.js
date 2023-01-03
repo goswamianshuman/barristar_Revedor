@@ -21,7 +21,7 @@ const Practice = () => {
         breadcumbMenu={breadcumbMenu}
         background="/images/breadcumb/1.jpg"
       />
-      <Service className="bgColor" />
+      {/* <Service className="bgColor" /> */}
       <ServiceArea className="ourServiceAreaStyleThree bgFFF" />
       <PricingTable />
       <Testmonial className="pt100" />

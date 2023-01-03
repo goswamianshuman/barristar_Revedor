@@ -19,17 +19,17 @@ const About = ({
   return (
     <Grid className={`aboutArea ${className}`}>
       <Grid container spacing={4} className="container">
-        <Grid item md={6} xs={12} className="changeOrder">
-          <Grid className="aboutImageWrap">
+        <Grid item md={6} xs={11} className="changeOrder">
+          <div className="aboutImageWrap">
             <img src={aboutData[0].images} alt="" />
             {aboutData[0].videoId && (
               <Button onClick={() => setVideo(true)} className="playBtn">
                 <PlayArrowTwoToneIcon />
               </Button>
             )}
-          </Grid>
+          </div>
         </Grid>
-        <Grid item md={6} xs={12}>
+        <Grid item md={6} xs={11}>
           <Grid className="aboutContent">
             {aboutData[0].subTitle && (
               <span className="subtitle">{aboutData[0].subTitle}</span>

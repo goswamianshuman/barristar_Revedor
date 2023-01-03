@@ -17,7 +17,7 @@ const CounterArea = ({ className = "", fullWidth }) => {
       strength={200}
     >
       <Grid container spacing={4} className="container">
-        <Grid item lg={fullWidth ? 12 : 6} xs={12}>
+        <Grid item lg={fullWidth ? 12 : 6} xs={11}>
           <Grid className="counterMainWrapper">
             {counters.map((count, i) => (
               <Grid key={i} className="counterWrap">

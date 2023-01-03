@@ -24,7 +24,7 @@ const AboutPage = () => {
         breadcumbMenu={breadcumbMenu}
         background="/images/breadcumb/1.jpg"
       />
-      <Service className="bgColor" />
+      {/* <Service className="serviceAreaStyleTwo" /> */}
       <About className="aboutAreaStyleTwo" />
       <ServiceArea className="ourServiceAreaStyleTwo" />
       <Testmonial />

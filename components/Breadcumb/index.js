@@ -4,11 +4,11 @@ import Link from "next/link";
 import { Parallax } from "react-parallax";
 const Breadcumb = ({ className = "", title, breadcumbMenu, background }) => {
   return (
-    <Parallax
-      bgImage={background}
-      bgImageAlt="the cat"
-      contentClassName={`breadcumbArea ${className}`}
-      strength={200}
+    <div
+      style={{
+        background: ` url("${background}") no-repeat fixed center / cover`,
+      }}
+      className={`breadcumbArea ${className}`}
     >
       <Grid spacing={4} container className="container">
         <Grid item xs={12}>
@@ -30,7 +30,7 @@ const Breadcumb = ({ className = "", title, breadcumbMenu, background }) => {
           </Grid>
         </Grid>
       </Grid>
-    </Parallax>
+    </div>
   );
 };
 export default Breadcumb;

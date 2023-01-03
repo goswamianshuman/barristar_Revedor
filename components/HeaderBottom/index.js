@@ -32,7 +32,7 @@ const HeaderBottom = (props) => {
           </Grid>
           <Grid
             item
-            md={8}
+            md={responsive ? 12 : 8}
             xs={12}
             className={
               responsive ? "responsiveWrapper active" : "responsiveWrapper"

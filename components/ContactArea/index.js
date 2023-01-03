@@ -6,14 +6,9 @@ import { contact_section_item } from "../../data/data";
 
 const ContactArea = ({ className = "" }) => {
   return (
-    <Parallax
-      bgImage="/images/contact/1.jpg"
-      bgImageAlt="the cat"
-      contentClassName={`contactArea ${className}`}
-      strength={200}
-    >
+    <div className={`contactArea ${className}`}>
       <Grid container spacing={4} className="container">
-        <Grid item lg={5} xs={12}>
+        <Grid item lg={5} xs={11}>
           <Grid className="contactInfo">
             <span>{contact_section_item[0].subtitle}</span>
             <h2>{contact_section_item[0].title}</h2>
@@ -25,7 +20,7 @@ const ContactArea = ({ className = "" }) => {
           <Form />
         </Grid>
       </Grid>
-    </Parallax>
+    </div>
   );
 };
 export default ContactArea;

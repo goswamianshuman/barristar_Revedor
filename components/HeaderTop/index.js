@@ -30,17 +30,16 @@ const HeaderTop = (props) => {
             </li>
           </ul>
         </Grid>
-        <Hidden smDown>
-          <Grid item lg={2} md={3} xs={12} className="text-right">
-            <Button
-              className="btnStyle btnOutlined btnRadius"
-              component="a"
-              href="/contact"
-            >
-              Contact Us
-            </Button>
-          </Grid>
-        </Hidden>
+
+        <Grid item lg={2} md={3} xs={12} className="hidden">
+          <Button
+            className="btnStyle btnOutlined btnRadius"
+            component="a"
+            href="/contact"
+          >
+            Contact Us
+          </Button>
+        </Grid>
       </Grid>
     </Grid>
   );
