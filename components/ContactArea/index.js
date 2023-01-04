@@ -10,7 +10,11 @@ const ContactArea = ({ className = "" }) => {
       <Grid container spacing={4} className="container">
         <Grid item lg={5} xs={11}>
           <Grid className="contactInfo">
-            <span>{contact_section_item[0].subtitle}</span>
+            {contact_section_item[0].subtitle && (
+              <span className="subtitle">
+                {contact_section_item[0].subtitle}
+              </span>
+            )}
             <h2>{contact_section_item[0].title}</h2>
             <h6>{contact_section_item[0].textOne}</h6>
             <p>{contact_section_item[0].textTwo}</p>

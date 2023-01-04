@@ -29,8 +29,8 @@ const AboutPage = () => {
       <ServiceArea className="ourServiceAreaStyleTwo" />
       <Testmonial />
       <CounterArea fullWidth={true} className="counterAreaStyleTwo" />
-      <TeamMember slider={true} />
-      <BlogArea className="blogArea" />
+      {/* <TeamMember slider={true} /> */}
+      {/* <BlogArea className="blogArea" /> */}
       {/* <NewsLetter /> */}
     </Fragment>
   );

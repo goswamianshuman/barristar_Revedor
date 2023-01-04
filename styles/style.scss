@@ -124,6 +124,17 @@ body {
     .ptb100 {
         padding: 100px 0;
     }
+
+    .aboutbtn{
+            //  background: #000;
+             display: flex;
+             align-items: center;
+             justify-content: flex-start;
+            
+             @media (max-width:600px) {
+                justify-content: center;
+             }
+        }
 }
 
 .aboutArea {
@@ -189,15 +200,25 @@ body {
             font-size: 18px;
             color: #bd9d3f;
             display: block;
+
+            @media (max-width:600px) {
+                text-align: center;
+            }
         }
 
         h2 {
             margin-bottom: 20px;
             font-size: 30px;
+            @media (max-width:600px) {
+                text-align: center;
+            }
         }
 
         h3 {
             font-weight: 500;
+            @media (max-width:600px) {
+                text-align: center;
+            }
         }
 
         p {
@@ -208,7 +229,11 @@ body {
                 font-size: 14px;
                 margin-bottom: 20px;
             }
+            @media (max-width:600px) {
+                text-align: center;
+            }
         }
+
 
         .signature {
             margin-top: 35px;
@@ -639,9 +664,14 @@ body {
             margin-bottom: 40px;
         }
 
-        span {
-            font-size: 16px;
+        .subtitle {
+            font-size: 18px;
             color: #bd9d3f;
+            display: block;
+
+            @media (max-width:600px) {
+                text-align: center;
+            }
         }
 
         h2 {
@@ -665,6 +695,10 @@ body {
                     left: -35px;
                 }
             }
+
+            @media (max-width:600px) {
+                text-align: center;
+            }
         }
 
         h6 {
@@ -675,12 +709,18 @@ body {
             @media (max-width:1200px) {
                 font-size: 16px;
             }
+            @media (max-width:600px) {
+                text-align: center;
+            }
         }
 
         p {
             margin-top: 30px;
             color: rgb(33, 33, 33);
             line-height: 30px;
+            @media (max-width:600px) {
+                text-align: center;
+            }
         }
     }
 }

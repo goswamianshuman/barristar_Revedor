@@ -55,11 +55,13 @@ const About = ({
                 </p>
               </li>
             </ul>
-            <Link legacyBehavior href="/about">
-              <Button component="a" className="btnStyle">
-                More About Us..
-              </Button>
-            </Link>
+            <div className="aboutbtn">
+              <Link legacyBehavior href="/about">
+                <Button component="a" className="btnStyle">
+                  More About Us..
+                </Button>
+              </Link>
+            </div>
             {aboutData[0].signature && (
               <Grid className="signature">
                 <img src={aboutData[0].signature} alt="" />
