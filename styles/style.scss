@@ -127,13 +127,14 @@ body {
 
     .aboutbtn{
             //  background: #000;
+             width: 100%;
              display: flex;
              align-items: center;
              justify-content: flex-start;
-            
-             @media (max-width:600px) {
+
+             @media (max-width:845px) {
                 justify-content: center;
-             }
+            }
         }
 }
 
@@ -201,22 +202,32 @@ body {
             color: #bd9d3f;
             display: block;
 
-            @media (max-width:600px) {
+            @media (max-width:845px) {
                 text-align: center;
             }
+            @media (max-width:470px) {
+                text-align: center;
+            }
+
         }
 
         h2 {
             margin-bottom: 20px;
             font-size: 30px;
-            @media (max-width:600px) {
+            @media (max-width:470px) {
+                text-align: center;
+            }
+            @media (max-width:845px) {
                 text-align: center;
             }
         }
 
         h3 {
             font-weight: 500;
-            @media (max-width:600px) {
+            @media (max-width:470px) {
+                text-align: center;
+            }
+            @media (max-width:845px) {
                 text-align: center;
             }
         }
@@ -229,7 +240,10 @@ body {
                 font-size: 14px;
                 margin-bottom: 20px;
             }
-            @media (max-width:600px) {
+            @media (max-width:845px) {
+                text-align: center;
+            }
+            @media (max-width:470px) {
                 text-align: center;
             }
         }
@@ -272,6 +286,10 @@ body {
                     width: 60px;
                     height: 1px;
                     background: #D9B855;
+
+                    @media (max-width:845px) {
+                        display: none;
+                    }
                 }
             }
         }
@@ -669,7 +687,7 @@ body {
             color: #bd9d3f;
             display: block;
 
-            @media (max-width:600px) {
+            @media (max-width:845px) {
                 text-align: center;
             }
         }
@@ -694,9 +712,12 @@ body {
                     width: 30px;
                     left: -35px;
                 }
+                @media (max-width:845px) {
+                    display: none;
+                }
             }
 
-            @media (max-width:600px) {
+            @media (max-width:845px) {
                 text-align: center;
             }
         }
@@ -709,7 +730,7 @@ body {
             @media (max-width:1200px) {
                 font-size: 16px;
             }
-            @media (max-width:600px) {
+            @media (max-width:845px) {
                 text-align: center;
             }
         }
@@ -718,7 +739,7 @@ body {
             margin-top: 30px;
             color: rgb(33, 33, 33);
             line-height: 30px;
-            @media (max-width:600px) {
+            @media (max-width:845px) {
                 text-align: center;
             }
         }

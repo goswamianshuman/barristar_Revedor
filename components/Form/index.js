@@ -223,7 +223,7 @@ class Form extends Component {
               )}
             </Grid>
           </Grid>
-          <Grid item sm={6} xs={12}>
+          <Grid item sm={12} xs={12}>
             <div className="aboutbtn">
               <Button type="submit">Appointment</Button>
             </div>
