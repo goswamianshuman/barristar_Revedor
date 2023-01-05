@@ -19,15 +19,23 @@ const About = ({
   return (
     <Grid className={`aboutArea ${className}`}>
       <Grid container spacing={4} className="container">
-        <Grid item md={6} xs={11} className="changeOrder">
-          <div className="aboutImageWrap">
-            <img src={aboutData[0].images} alt="" />
-            {aboutData[0].videoId && (
-              <Button onClick={() => setVideo(true)} className="playBtn">
-                <PlayArrowTwoToneIcon />
-              </Button>
-            )}
-          </div>
+        <Grid
+          item
+          alignSelf="center"
+          lg={6}
+          md={5}
+          xs={11}
+          style={{
+            background: `url(${aboutData[0].images}) no-repeat center / cover`,
+          }}
+          className="changeOrder"
+        >
+          {/* <img src={aboutData[0].images} alt="" /> */}
+          {aboutData[0].videoId && (
+            <Button onClick={() => setVideo(true)} className="playBtn">
+              <PlayArrowTwoToneIcon />
+            </Button>
+          )}
         </Grid>
         <Grid item md={6} xs={11}>
           <Grid className="aboutContent">

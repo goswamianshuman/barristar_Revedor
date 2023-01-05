@@ -10,8 +10,8 @@ const Breadcumb = ({ className = "", title, breadcumbMenu, background }) => {
       }}
       className={`breadcumbArea ${className}`}
     >
-      <Grid spacing={4} container className="container">
-        <Grid item xs={12}>
+      <Grid container className="container">
+        <div className="breadcumbConainer">
           <Grid className="breadcumbWrap">
             <h2>{title}</h2>
             <ul>
@@ -28,7 +28,7 @@ const Breadcumb = ({ className = "", title, breadcumbMenu, background }) => {
               ))}
             </ul>
           </Grid>
-        </Grid>
+        </div>
       </Grid>
     </div>
   );
