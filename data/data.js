@@ -25,7 +25,7 @@ export const heroSliders = [
     title: "Best laywers at your fingertip",
     // subTitle: "As Like A Friend.",
     text: [
-      "ability to be anonymous.",
+      "Ability to be anonymous.",
       "Describe, convert and resolve all at your convenience.",
       "Save time and money that is precious to you.",
     ],
@@ -37,8 +37,8 @@ export const heroSliders = [
     subTitle: "the next sunrise.",
     text: [
       "Digitaly enter your problem and get connect to the best one.",
-      "save your fuel, time, money and brain.",
-      "easy access to top qualified lawyers.",
+      "Save your fuel, time, money and brain.",
+      "Easy access to top qualified lawyers.",
     ],
     button: "Contact us now",
   },
