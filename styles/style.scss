@@ -1704,9 +1704,13 @@ body {
         p {
             font-size: 20px;
             color: #fff;
-            line-height: 0.8em;
+            // line-height: 0.8em;
             font-weight: 300;
             margin: 0;
+
+            @media (max-width:900px) {
+                text-align: center;
+            }
 
             @media (max-width:768px) {
                 font-size: 16px;
@@ -1717,13 +1721,17 @@ body {
             font-size: 60px;
             font-weight: 400;
             color: white;
-            line-height: 90px;
+            // line-height: 90px;
             margin: 33px 0;
 
             @media (max-width:1200px) {
                 font-size: 50px;
                 line-height: 65px;
                 margin: 25px 0;
+            }
+
+            @media (max-width:900px) {
+                text-align: center;
             }
 
             @media (max-width:768px) {
@@ -1754,7 +1762,7 @@ body {
             position: absolute;
             left: 0;
             top: 0;
-            background: linear-gradient(to right, #000 14%, #000 15%, rgba(138, 140, 151, 0) 33%, rgba(255, 255, 255, 0) 52%, rgba(244, 244, 244, 0) 55%, rgba(166, 167, 175, 0) 68%, rgba(75, 79, 96, 0.86) 83%, #000 92%);
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.292) , rgba(0, 0, 0, 0.8));
             z-index: -1;
             opacity: .75;
 
@@ -1770,6 +1778,31 @@ body {
              margin: 0 auto;
              text-align: center;
              
+            }
+
+            .text{
+                
+                margin-top: 5px;
+                position: relative; 
+                padding-left: 30px;
+
+                @media (max-width:900px) {
+                    padding-left: 0;
+                }
+
+                &::before{
+                    content: " ";
+                    height: 3px;
+                    width: 18px;
+                    position: absolute;
+                    background: #D9B855;
+                    left: 0;
+                    top: 50%;
+
+                    @media (max-width:900px) {
+                        display: none;
+                    }
+                }
             }
         }
 

@@ -69,15 +69,22 @@ const HeroSlider = ({ className = "" }) => {
           >
             <Grid container className="container">
               <Grid className="heroDetails" item lg={8} xs={12}>
-                <p>{slider.text}</p>
                 <h2>
                   <span>{slider.title}</span> <span>{slider.subTitle}</span>
                 </h2>
-                <Link legacyBehavior href="/contact">
+                <p>
+                  {slider.text.map((data) => (
+                    <>
+                      <span className="text">{data}</span>
+                      <br />
+                    </>
+                  ))}
+                </p>
+                {/* <Link legacyBehavior href="/contact">
                   <Button className="btnStyle" component="a">
                     {slider.button}
                   </Button>
-                </Link>
+                </Link> */}
               </Grid>
             </Grid>
           </Grid>

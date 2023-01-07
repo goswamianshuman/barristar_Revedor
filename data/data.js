@@ -11,30 +11,35 @@ import CastForEducationTwoToneIcon from "@mui/icons-material/CastForEducationTwo
 export const heroSliders = [
   {
     images: "/images/slider/slide-4.jpg",
-    title: "We Fight For Your Justice",
-    subTitle: "As Like A Friend.",
-    text: "The Most Talented Law Frim",
+    title: "Law made Easier",
+    // subTitle: "As Like A Friend.",
+    text: [
+      "Get connected to best lawyer based on your needs.",
+      "Schedule when it works for you - as early as today.",
+      "Chat, pay, meet and resolve all through one platform.",
+    ],
     button: "Contact us now",
   },
   {
     images: "/images/slider/slide-5.jpg",
-    title: "We Fight For Your Justice",
-    subTitle: "As Like A Friend.",
-    text: "The Most Talented Law Frim",
-    button: "Contact us now",
-  },
-  {
-    images: "/images/slider/slide-22.jpg",
-    title: "We Fight For Your Justice",
-    subTitle: "As Like A Friend.",
-    text: "The Most Talented Law Frim",
+    title: "Best laywers at your fingertip",
+    // subTitle: "As Like A Friend.",
+    text: [
+      "ability to be anonymous.",
+      "Describe, convert and resolve all at your convenience.",
+      "Save time and money that is precious to you.",
+    ],
     button: "Contact us now",
   },
   {
     images: "/images/slider/slide-1.jpg",
-    title: "We Fight For Your Justice",
-    subTitle: "As Like A Friend.",
-    text: "The Most Talented Law Frim",
+    title: "Get problem resolved before ",
+    subTitle: "the next sunrise.",
+    text: [
+      "Digitaly enter your problem and get connect to the best one.",
+      "save your fuel, time, money and brain.",
+      "easy access to top qualified lawyers.",
+    ],
     button: "Contact us now",
   },
 ];
